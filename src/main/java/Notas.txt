@@ -1,0 +1,5 @@
+Se le pide en primer lugar crear las clases Automóvil, Camion, Camioneta, Vehículo,
+País y Fabricante.
+
+Automóvil, Camion y Camioneta heredan de Vehículo. Todas las
+clases estarán en el paquete vehiculos.
