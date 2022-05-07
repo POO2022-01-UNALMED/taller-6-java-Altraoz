@@ -11,17 +11,17 @@ velocidadMaxima donde se especifica el valor máximo que alcanza el vehículo en
 velocidad, un atributo nombre donde almacena el texto con el que llaman al vehículo, el
 atributo precio almacena la cantidad necesaria para comprar el vehículo, el atributo peso
 almacenara el valor del peso del vehículo, el atributo traccion almacenará el texto del
-PROGRAMACIÒN ORIENTADA A OBJETOS
-FACULTAD DE MINAS
-Sede Medellín 1
 tipo de tracción que usa el vehículo, el atributo fabricante que almacena el valor del
 fabricante del auto, por último el atributo CantidadVehiculos el cual almacena el valor
 entero de la cantidad de vehículos que se han creado hasta el momento.
+
+
 • Para la clase Automóvil esta tendrá un atributo puestos donde almacenará la cantidad de
 puestos o asientos para personas, que el auto tiene permitido movilizar. Esta clase para
 los atributos puertas, velocidadMaxima y traccion tomaran los siguientes valores
 cuando se crea un nuevo Automóvil 4, 100 y ”FWD” respectivamente. El resto de los
 atributos se recibirán como parámetros.
+--
 • Para la clase Camioneta esta tendrá un atributo volco donde se especifica si la
 camioneta tiene o no tiene volcó (use el atributo boolean). Igualmente, el valor para los
 atributos velocidadMaxima y traccion tomarán los siguientes valores cuando se crea una
