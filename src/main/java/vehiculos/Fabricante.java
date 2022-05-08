@@ -11,6 +11,7 @@ public class Fabricante {
     public Fabricante(String nombre, Pais pais){
         this.nombre = nombre;
         this.pais = pais;
+        fabricantes.add(this);
 
     }
 
@@ -20,6 +21,7 @@ public class Fabricante {
 
     public static Fabricante fabricaMayorVentas(){
         Fabricante max = fabricantes.get(0);
+
         for (Fabricante fabricante: fabricantes){
             if (fabricante.numeroCreados > max.numeroCreados){
                 max = fabricante;
