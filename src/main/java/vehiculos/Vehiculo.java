@@ -1,5 +1,7 @@
 package vehiculos;
 
+import java.util.ArrayList;
+
 public class Vehiculo {
     private String placa;
     private int puertas;
@@ -9,14 +11,27 @@ public class Vehiculo {
     private int peso;
     private String traccion;
     private Fabricante fabricante;
-    private int cantidadVehiculos;
+    public static int cantidadVehiculos;
 
-    public Vehiculo(String placa, String nombre, int precio, int peso, Fabricante fabricante,
-                    int puertas, int velocidadMaxima, String traccion){
+    public static int automoviles = 0;
+    public static int camionetas = 0;
+    public static int camiones = 0;
+
+
+    public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio,
+                    int peso, String traccion,  Fabricante fabricante){
+        this.placa = placa;
         this.puertas = puertas;
         this.velocidadMaxima = velocidadMaxima;
+        this.nombre = nombre;
+        this.precio = precio;
+        this.peso = peso;
         this.traccion = traccion;
+        this.fabricante = fabricante;
+        this.registrar();
+        cantidadVehiculos++;
     }
+
 
     public String getPlaca(){return this.placa;}
     public void setPlaca(String placa){this.placa = placa;}
@@ -42,8 +57,18 @@ public class Vehiculo {
     public Fabricante getFabricante(){return this.fabricante;}
     public void setFabricante(Fabricante fabricante){this.fabricante = fabricante;}
 
-    public int getCantidadVehiculos(){return this.cantidadVehiculos;}
-    public void setCantidadVehiculos(int cantidadVehiculos){this.cantidadVehiculos = cantidadVehiculos;}
+    public static int getCantidadVehiculos(){return Vehiculo.cantidadVehiculos;}
+    public static void setCantidadVehiculos(int cantidadVehiculos){Vehiculo.cantidadVehiculos = cantidadVehiculos;}
 
+    private void registrar(){
+        this.getFabricante().registrar();
+        this.getFabricante().getPais().registrar();
+    }
+
+    public String vehiculosPorTipo(){
+        return "Automoviles: "+Vehiculo.automoviles +
+                "Camionetas: "+Vehiculo.camionetas+"\n" +
+                "Camiones: "+Vehiculo.camiones;
+    }
 
 }

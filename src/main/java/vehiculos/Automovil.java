@@ -4,8 +4,9 @@ public class Automovil extends Vehiculo{
     private int puestos;
 
     public Automovil(String placa, String nombre, int precio, int peso, Fabricante fabricante, int puestos){
-        super(placa, nombre, precio, peso, fabricante, 4, 100, "FWD");
+        super(placa, 4,100, nombre, precio, peso, "FWD", fabricante);
         this.puestos = puestos;
+        Vehiculo.automoviles++;
     }
 
     public int getPuestos(){return this.puestos;}
