@@ -21,16 +21,20 @@ puestos o asientos para personas, que el auto tiene permitido movilizar. Esta cl
 los atributos puertas, velocidadMaxima y traccion tomaran los siguientes valores
 cuando se crea un nuevo Automóvil 4, 100 y ”FWD” respectivamente. El resto de los
 atributos se recibirán como parámetros.
---
+
 • Para la clase Camioneta esta tendrá un atributo volco donde se especifica si la
 camioneta tiene o no tiene volcó (use el atributo boolean). Igualmente, el valor para los
 atributos velocidadMaxima y traccion tomarán los siguientes valores cuando se crea una
 nueva Camioneta 90 y ”4X4” respectivamente. El resto de los atributos se recibirán
 como parámetros.
+
 • Para la clase Camion esta tendrá un atributo ejes donde se almacena la cantidad de ejes
 que tiene el camión. Además, el valor para los atributos puertas, velocidadMaxima y
 traccion tomarán los siguientes valores cuando se crea un nuevo Camión 2, 80 y ”4X2”
 respectivamente. El resto de los atributos se recibirán como parámetros.
+
+--
+
 Nota1: Cree los métodos get y set para los atributos de las clases. Tenga en cuenta que
 cuando un valor es de tipo boolean el estándar para obtener el valor(get) se representa
 como isNombreAtributo, y cree los constructores con el orden de los parámetros que
